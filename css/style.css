@@ -177,7 +177,7 @@ body {
 .main__description {
     font-size: 20px;
     text-align: center;
-    width: 50%;
+    width: 65%;
     margin: 32px auto;
 }
 .swiper {
@@ -206,12 +206,15 @@ body {
 .swiper-slide img:hover {
     transform: scale(1.1);
 }
-.chair-swiper .swiper-slide {
+.chair-swiper .swiper-slide,
+.sofa-swiper .swiper-slide {
     flex-direction: column;
     align-items: start;
 }
 .chair-swiper .swiper-slide .chair_title,
-.chair-swiper .swiper-slide .chair_brand {
+.chair-swiper .swiper-slide .chair_brand,
+.sofa-swiper .swiper-slide .chair_title,
+.sofa-swiper .swiper-slide .chair_brand {
     color: #000;
     display: block;
     font-size: 14px;
@@ -222,13 +225,16 @@ body {
     text-align: start;
 }
 
-.chair-swiper .swiper-slide img:hover {
+.chair-swiper .swiper-slide img:hover,
+.sofa-swiper .swiper-slide img:hover {
     transform: none;
 }
 .main_slider_arrow.swiper-button-next, 
 .main_slider_arrow.swiper-button-prev,
 .chair_slider_arrow.swiper-button-next, 
-.chair_slider_arrow.swiper-button-prev {
+.chair_slider_arrow.swiper-button-prev,
+.sofa_slider_arrow.swiper-button-next, 
+.sofa_slider_arrow.swiper-button-prev {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -243,14 +249,17 @@ body {
     z-index: 100000;
 }
 .main_slider_arrow.swiper-button-next,
-.chair_slider_arrow.swiper-button-next {
+.chair_slider_arrow.swiper-button-next,
+.sofa_slider_arrow.swiper-button-next {
     right: -5%;
     left: auto;
 }
 .main_slider_arrow.swiper-button-next::after, 
 .main_slider_arrow.swiper-button-prev::after,
 .chair_slider_arrow.swiper-button-next::after, 
-.chair_slider_arrow.swiper-button-prev::after {
+.chair_slider_arrow.swiper-button-prev::after,
+.sofa_slider_arrow.swiper-button-next::after, 
+.sofa_slider_arrow.swiper-button-prev::after {
     font-size: 20px;
     color: #171725;
 }
@@ -268,6 +277,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
+    border-radius: 14px;
     transition: all .3s ease;
 }
 .main_btn:hover {
@@ -276,11 +286,13 @@ body {
 
 
 
-.chair {
+.chair,
+.sofa {
     background-color: #fff;
     padding: 140px 0;
 }
-.chair .main__description {
+.chair .main__description,
+.sofa .main__description {
     margin-bottom: 64px;
 }
 .brands {

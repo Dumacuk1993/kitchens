@@ -13,12 +13,22 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     const swiperChair = new Swiper(".chair-swiper", {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 110,
         loop: true,
         navigation: {
             nextEl: ".chair_slider_arrow.swiper-button-next",
             prevEl: ".chair_slider_arrow.swiper-button-prev",
+        }
+    });
+
+    const swiperSofa = new Swiper(".sofa-swiper", {
+        slidesPerView: 2,
+        spaceBetween: 110,
+        loop: true,
+        navigation: {
+            nextEl: ".sofa_slider_arrow.swiper-button-next",
+            prevEl: ".sofa_slider_arrow.swiper-button-prev",
         }
     });
     
