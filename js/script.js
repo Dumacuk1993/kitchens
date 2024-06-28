@@ -31,6 +31,29 @@ window.addEventListener('DOMContentLoaded', () => {
             prevEl: ".sofa_slider_arrow.swiper-button-prev",
         }
     });
-    
+
+
+    const modal = document.querySelector(".modal"),
+        modalOverlay = document.querySelector(".modal__overlay"),
+        modalOpenBtn = document.querySelector(".header_contacts_btn"),
+        modalClose = document.querySelector(".modal__close")
+        
+    modalOpenBtn.addEventListener('click', (e) => {
+        e.preventDefault()
+        modal.style = 'display: flex;';
+        modalOverlay.style = 'opacity: 1; visibility: visible;';
+    })
+
+    modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) {
+            modal.style = 'display: none;';
+            modalOverlay.style = 'opacity: 0; visibility: hidden;'; 
+        }   
+    })
+
+    modalClose.addEventListener('click', () => {
+        modal.style = 'display: none;';
+        modalOverlay.style = 'opacity: 0; visibility: hidden;';
+    })
 })
 
