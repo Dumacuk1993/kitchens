@@ -35,13 +35,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const modal = document.querySelector(".modal"),
         modalOverlay = document.querySelector(".modal__overlay"),
-        modalOpenBtn = document.querySelector(".header_contacts_btn"),
+        modalOpenBtn = document.querySelectorAll(".form_open"),
         modalClose = document.querySelector(".modal__close")
         
-    modalOpenBtn.addEventListener('click', (e) => {
-        e.preventDefault()
-        modal.style = 'display: flex;';
-        modalOverlay.style = 'opacity: 1; visibility: visible;';
+    modalOpenBtn.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault()
+            modal.style = 'display: flex;';
+            modalOverlay.style = 'opacity: 1; visibility: visible;';
+        })
     })
 
     modalOverlay.addEventListener('click', (e) => {
