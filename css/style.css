@@ -420,7 +420,9 @@ body {
 .footer_social i:hover {
     opacity: .7;
 }
-
+.footer_social.footer_social-mobile {
+    display: none;
+}
 .footer__copyright {
     text-align: center;
     font-size: 20px;
