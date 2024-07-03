@@ -21,6 +21,29 @@
         margin-bottom: 8px;
     }
 }
+@media (max-width: 1024px) {
+    .info__text-text {
+        font-size: 18px;
+    }
+    .info__text-title {
+        font-size: 36px;
+    }
+    .info__img,
+    .info__text {
+        width: 40%;
+    }
+    .contacts_wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contacts_info-item {
+        grid-template-columns: auto;
+    }
+    .contacts_info {
+        gap: 24px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 @media (max-width: 940px) {
     .footer_social {
         display: none;
@@ -36,10 +59,31 @@
     .footer {
         padding: 0;
     }
+    .brands .container {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .brands_text_img {
+        display: none;
+    }
+    .brands_text {
+        height: auto;
+        width: 100%;
+    }
+    .brands_icons {
+        width: 100%;
+    }
+    .kitchens-main_item {
+        height: 200px;
+    }
+    /* .kitchens-main_items {
+        
+    } */
 }
 @media (max-width: 768px) {
     .header .container {
-        flex-wrap: nowrap;
+        display: grid;
+        grid-template-columns: 160px auto 160px;
     } 
     .header_logo {
         margin-bottom: 0;
@@ -47,6 +91,13 @@
     .header_list {
         padding-top: 0;
         border-top: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 36px 0;
         display: none;
     }  
     .header_bars {
@@ -54,6 +105,42 @@
     } 
     .header_contacts {
         align-items: center;
+    }
+    .info__item {
+        flex-direction: column;
+    }
+    .info__text {
+        width: 100%;
+        text-align: center;
+    }
+    .main_slider_arrow.swiper-button-next, 
+    .main_slider_arrow.swiper-button-prev, 
+    .chair_slider_arrow.swiper-button-next, 
+    .chair_slider_arrow.swiper-button-prev, 
+    .sofa_slider_arrow.swiper-button-next, 
+    .sofa_slider_arrow.swiper-button-prev {
+        width: 30px;
+        height: 30px;
+    }
+    .main_slider-wrapper {
+        padding: 0 35px;
+    } 
+    .main_slider_arrow.swiper-button-next::after, .main_slider_arrow.swiper-button-prev::after, .chair_slider_arrow.swiper-button-next::after, .chair_slider_arrow.swiper-button-prev::after, .sofa_slider_arrow.swiper-button-next::after, .sofa_slider_arrow.swiper-button-prev::after {
+        font-size: 12px;
+    }
+    .brands {
+        padding-top: 60px;
+    }
+    .kitchens-main_items {
+       grid-template-columns: repeat(2, 1fr); 
+       gap: 32px;
+    }
+    .kitchens-main_title {
+        font-size: 36px;
+    }
+    .brand_description {
+        font-size: 16px;
+        width: 100%;
     }
 }
 
@@ -74,11 +161,47 @@
     .footer_social.footer_social-mobile {
         gap: 20px;
     }
+    .contacts_info {
+        flex-direction: column;
+    }
+    .contacts_info-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+@media (max-width: 590px) {
+    .header_contacts {
+        display: none;
+    }
+    .header_contacts--mobile {
+        display: flex;
+        flex-direction: row;
+        gap: 64px;
+        padding-top: 36px;
+    }
+    .header_contacts_btn {
+        margin: 0;
+    }
+    .header .container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .main__title {
+        font-size: 36px;
+    }
+    .main__description {
+        font-size: 16px;
+        width: 100%;
+    }
+    .brands_icon {
+        padding: 16px;
+    }
+} 
 @media (max-width: 490px) {
     .header_logo svg {
         width: 160px;
         height: auto;
+    }
+    .kitchens-main_link {
+        padding: 16px;
     }
 }
 @media (max-width: 450px) {
@@ -87,5 +210,27 @@
     }
     .footer_social.footer_social-mobile {
         margin-top: 32px;
+    }
+    .header_contacts--mobile {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .info__text-title {
+        font-size: 26px;
+    }
+    .info__text-text {
+        font-size: 16px;
+    }
+    .brands_icon {
+        height: 90px;
+    }
+    .kitchens-main_items {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .contacts_info-text {
+        font-size: 13px;
+    }
+    .contacts_info-title {
+        font-size: 16px;
     }
 }

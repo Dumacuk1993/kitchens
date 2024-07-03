@@ -9,7 +9,29 @@ window.addEventListener('DOMContentLoaded', () => {
         navigation: {
             nextEl: ".main_slider_arrow.swiper-button-next",
             prevEl: ".main_slider_arrow.swiper-button-prev",
-        }
+        },
+        breakpoints: {
+            320: {
+              spaceBetween: 10,
+              slidesPerView: 1
+            },
+            500: {
+                spaceBetween: 20,
+                slidesPerView: "auto"
+            },
+            640: {
+              spaceBetween: 20,
+              slidesPerView: "auto"
+            },
+            768: {
+              spaceBetween: 40,
+              slidesPerView: "auto"
+            },
+            1024: {
+              spaceBetween: 70,
+              slidesPerView: "auto"
+            },
+          },
     });
 
     const swiperChair = new Swiper(".chair-swiper", {
@@ -19,7 +41,29 @@ window.addEventListener('DOMContentLoaded', () => {
         navigation: {
             nextEl: ".chair_slider_arrow.swiper-button-next",
             prevEl: ".chair_slider_arrow.swiper-button-prev",
-        }
+        },
+        breakpoints: {
+            320: {
+              spaceBetween: 10,
+              slidesPerView: 1
+            },
+            500: {
+                spaceBetween: 20,
+                slidesPerView: 2
+            },
+            640: {
+              spaceBetween: 20,
+              slidesPerView: 2
+            },
+            768: {
+              spaceBetween: 40,
+              slidesPerView: 3
+            },
+            1024: {
+              spaceBetween: 70,
+              slidesPerView: 3
+            },
+          },
     });
 
     const swiperSofa = new Swiper(".sofa-swiper", {
@@ -29,7 +73,29 @@ window.addEventListener('DOMContentLoaded', () => {
         navigation: {
             nextEl: ".sofa_slider_arrow.swiper-button-next",
             prevEl: ".sofa_slider_arrow.swiper-button-prev",
-        }
+        },
+        breakpoints: {
+            320: {
+              spaceBetween: 10,
+              slidesPerView: 1
+            },
+            500: {
+                spaceBetween: 20,
+                slidesPerView: 2
+            },
+            640: {
+              spaceBetween: 20,
+              slidesPerView: 2
+            },
+            768: {
+              spaceBetween: 40,
+              slidesPerView: 2
+            },
+            1024: {
+              spaceBetween: 70,
+              slidesPerView: 2
+            },
+          },
     });
 
 
@@ -56,6 +122,13 @@ window.addEventListener('DOMContentLoaded', () => {
     modalClose.addEventListener('click', () => {
         modal.style = 'display: none;';
         modalOverlay.style = 'opacity: 0; visibility: hidden;';
+    })
+
+    const menuBtn = document.querySelector(".header_bars i"),
+        menuList = document.querySelector(".header_list");
+
+    menuBtn.addEventListener('click', () => {
+        menuList.classList.toggle('active')
     })
 })
 

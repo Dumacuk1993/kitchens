@@ -57,7 +57,7 @@ body {
 } 
 .header_bars {
     display: none;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 
 }
@@ -261,14 +261,14 @@ body {
     align-items: center;
     color: #fff;
     position: absolute;
-    left: -5%;
+    left: 0;
     top: 50%;
     z-index: 100000;
 }
 .main_slider_arrow.swiper-button-next,
 .chair_slider_arrow.swiper-button-next,
 .sofa_slider_arrow.swiper-button-next {
-    right: -5%;
+    right: 0;
     left: auto;
 }
 .main_slider_arrow.swiper-button-next::after, 
@@ -280,7 +280,9 @@ body {
     font-size: 20px;
     color: #171725;
 }
-
+.main_slider-wrapper {
+    padding: 0 70px;
+}
 .main_bottom {
     display: flex;
     justify-content: center;
@@ -509,7 +511,6 @@ body {
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 32px;
-    text-transform: uppercase;
     text-align: center;
 }
 .brand_description {
@@ -728,4 +729,11 @@ body {
 .contacts .main_btn {
     margin-top: 0;
     margin-bottom: 62px;
+}
+
+.header_list.active {
+    display: flex;
+}
+.header_contacts--mobile {
+    display: none;
 }
