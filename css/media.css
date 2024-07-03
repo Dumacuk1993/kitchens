@@ -142,6 +142,9 @@
         font-size: 16px;
         width: 100%;
     }
+    .header.header_main {
+        height: 70vh;
+    }
 }
 
 @media (max-width: 630px) {
@@ -194,10 +197,24 @@
     .brands_icon {
         padding: 16px;
     }
+    .tel__icon {
+        display: block;
+        margin-right: 36px;
+    }
 } 
 @media (max-width: 490px) {
+    .header_logo {
+        display: flex;
+        justify-content: start;
+    }
+    .header_list {
+        top: 70px;
+    }
+    .contacts {
+        margin-top: 15px;
+    }
     .header_logo svg {
-        width: 160px;
+        width: 100px;
         height: auto;
     }
     .kitchens-main_link {

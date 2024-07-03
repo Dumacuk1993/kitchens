@@ -124,7 +124,7 @@ window.addEventListener('DOMContentLoaded', () => {
         modalOverlay.style = 'opacity: 0; visibility: hidden;';
     })
 
-    const menuBtn = document.querySelector(".header_bars i"),
+    const menuBtn = document.querySelector(".header_bars .fa-bars"),
         menuList = document.querySelector(".header_list");
 
     menuBtn.addEventListener('click', () => {

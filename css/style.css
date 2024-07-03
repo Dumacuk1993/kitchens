@@ -737,3 +737,6 @@ body {
 .header_contacts--mobile {
     display: none;
 }
+.tel__icon {
+    display: none;
+}
