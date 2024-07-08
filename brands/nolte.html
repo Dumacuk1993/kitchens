@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кухни</title>
-    <link rel="icon" href="images/logo_mini.png" type="image/png">
+    <title>Nolte</title>
+    <link rel="icon" href="../images/logo_mini.png" type="image/png">
     <script src="https://kit.fontawesome.com/fc9b53be73.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.3.0/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
 </head>
 <body>
     <header class="header">
@@ -24,7 +25,7 @@
             </a>
             <ul class="header_list">
                 <li class="header_list_item">
-                    <a href="kitchens.html">Кухни</a>
+                    <a href="../kitchens.html">Кухни</a>
                 </li>
                 <li class="header_list_item">
                     <a href="">Гардеробные</a>
@@ -56,43 +57,175 @@
         </div>
     </header>
 
-    <div class="kitchens-main">
+    <div class="brand">
         <div class="container">
-            <h1 class="kitchens-main_title">Наши бренды</h1>
-            <div class="kitchens-main_items">
-                <a href="brands/eggersmann.html" class="kitchens-main_item" style="background-image: url(images/brand_bg1.jpeg);">
-                    <div class="kitchens-main_item--bg"></div>
-                    <img src="images/brand1_white.svg" alt="">
-                </a>
-                <a href="brands/eggersmann.html" class="kitchens-main_item" style="background-image: url(images/brand_bg1.jpeg);">
-                    <div class="kitchens-main_item--bg"></div>
-                    <img src="images/brand1_white.svg" alt="">
-                </a>
-                <a href="brands/nolte.html" class="kitchens-main_item" style="background-image: url(images/brand_bg1.jpeg);">
-                    <div class="kitchens-main_item--bg"></div>
-                    <img src="images/brand3_white.svg" alt="">
-                </a>
-                <a href="brands/eggersmann.html" class="kitchens-main_item" style="background-image: url(images/brand_bg1.jpeg);">
-                    <div class="kitchens-main_item--bg"></div>
-                    <img src="images/brand2_white.svg" alt="">
-                </a>
-                <a href="brands/eggersmann.html" class="kitchens-main_item" style="background-image: url(images/brand_bg1.jpeg);">
-                    <div class="kitchens-main_item--bg"></div>
-                    <img src="images/brand4_white.svg" alt="">
-                </a>
-                <a href="brands/eggersmann.html" class="kitchens-main_item" style="background-image: url(images/brand_bg1.jpeg);">
-                    <div class="kitchens-main_item--bg"></div>
-                    <img src="images/brand1_white.svg" alt="">
-                </a>
+            <div class="brand_header">
+                <div class="brand_content">
+                    <div class="brand_content_wrapper">
+                        <h1 class="brand_title">Современные Кухни Eggersmann</h1>
+                        <p class="brand_description">
+                            Исследуйте коллекцию современных кухонь Eggersmann, сочетающих в себе передовой дизайн, 
+                            безупречное качество и функциональность. Каждый элемент кухни создается с вниманием к 
+                            деталям и использует высококачественные материалы, чтобы обеспечить долговечность и элегантность в вашем доме. 
+                            Независимо от вашего стиля, кухни 
+                            Eggersmann предлагают инновационные решения и индивидуальные проекты, которые превратят ваше кухонное пространство в настоящий шедевр.
+                        </p>
+                    </div>
+                    <div class="brand_btn">
+                        <a href="" class="brand_link form_open">Получить консультацию</a>
+                    </div>
+                </div>
             </div>
-            <p class="kitchens-main_descr">
-                Далеко-далеко за словесными горами в стране асных живут рыбные тексты. Мир, живет.
-                Далеко-далеко за словесными горами в се гласных и согласных живут рыбные тексты. Мир, живет.
-                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Мир, живет.
-                Далеко-далеко за словесными горами в стране гласнксты. Мир, живет.
-            </p>
-            <div class="kitchens-main_btn">
-                <a href="" class="kitchens-main_link form_open">Получить консультацию</a>
+            <div class="brand_items">
+                <div class="brand_item">
+                    <h2 class="brand_item_title">Заголовок кухни 1</h2>
+                    <div id="Nolte2" class="grid-gallery">
+                        <a href="../images/nolte/nolte4-1.jpg" data-lg-size="1406-1390" class="min">
+                            <img src="../images/nolte/nolte4-1.jpg" alt="">
+                        </a>
+                        <a href="../images/nolte/nolte4.jpg" data-lg-size="1406-1390" class="min">
+                            <img src="../images/nolte/nolte4.jpg" alt="">
+                        </a>
+                    </div>  
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const lightGalleryInstance = lightGallery(document.getElementById('Nolte2'), {
+                                speed: 500,
+                                thumbnail: true,
+                            });
+                        });
+                    </script>
+                    <div class="brand_btn">
+                        <a href="" class="brand_link form_open">Запросить каталоги</a>  
+                    </div>  
+                </div>
+
+                <div class="brand_item">
+                    <h2 class="brand_item_title">Заголовок кухни 2</h2>
+                    <div id="Nolte1" class="grid-gallery">
+                        <a href="../images/nolte/nolte1.jpg" data-lg-size="1406-1390" class="min">
+                            <img src="../images/nolte/nolte1.jpg" alt="">
+                        </a>
+                        <a href="../images/nolte/nolte1-1.jpg" data-lg-size="1406-1390" class="min">
+                            <img src="../images/nolte/nolte1-1.jpg" alt="">
+                        </a>
+                        <a href="../images/nolte/nolte1-2.jpg" data-lg-size="1406-1390" class="max">
+                            <img src="../images/nolte/nolte1-2.jpg" alt="">
+                        </a>
+                    </div>  
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const lightGalleryInstance = lightGallery(document.getElementById('Nolte1'), {
+                                speed: 500,
+                                thumbnail: true,
+                            });
+                        });
+                    </script>
+                    <div class="brand_btn">
+                        <a href="" class="brand_link form_open">Запросить каталоги</a>  
+                    </div>  
+                </div>
+
+                <div class="brand_item">
+                    <h2 class="brand_item_title">Заголовок кухни 3</h2>
+                    <div id="Nolte3" class="grid-gallery">
+                        <a href="../images/nolte/nolte3.jpg" data-lg-size="1406-1390" class="min">
+                            <img src="../images/nolte/nolte3.jpg" alt="">
+                        </a>
+                        <a href="../images/nolte/nolte3-1.jpg" data-lg-size="1406-1390" class="min">
+                            <img src="../images/nolte/nolte3-1.jpg" alt="">
+                        </a>
+                        <a href="../images/nolte/nolte3-2.jpg" data-lg-size="1406-1390" class="max">
+                            <img src="../images/nolte/nolte3-2.jpg" alt="">
+                        </a>
+                        <a href="../images/nolte/nolte3-4.jpg" data-lg-size="1406-1390" class="max">
+                            <img src="../images/nolte/nolte3-4.jpg" alt="">
+                        </a>
+                    </div>  
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const lightGalleryInstance = lightGallery(document.getElementById('Nolte3'), {
+                                speed: 500,
+                                thumbnail: true,
+                            });
+                        });
+                    </script>
+                    <div class="brand_btn">
+                        <a href="" class="brand_link form_open">Запросить каталоги</a>  
+                    </div>  
+                </div>
+
+                <div class="brand_item">
+                    <h2 class="brand_item_title">Заголовок кухни 4</h2>
+                    <div id="Nolte4" class="grid-gallery">
+                        <a href="../images/nolte/nolte4.jpg" data-lg-size="1406-1390" class="min">
+                            <img src="../images/nolte/nolte4.jpg" alt="">
+                        </a>
+                        <a href="../images/nolte/nolte4-1.jpg" data-lg-size="1406-1390" class="min">
+                            <img src="../images/nolte/nolte4-1.jpg" alt="">
+                        </a>
+                    </div>  
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const lightGalleryInstance = lightGallery(document.getElementById('Nolte4'), {
+                                speed: 500,
+                                thumbnail: true,
+                            });
+                        });
+                    </script>
+                    <div class="brand_btn">
+                        <a href="" class="brand_link form_open">Запросить каталоги</a>  
+                    </div>  
+                </div>
+
+                <div class="brand_item">
+                    <h2 class="brand_item_title">Заголовок кухни 5</h2>
+                    <div id="Nolte5" class="grid-gallery">
+                        <a href="../images/nolte/nolte5.jpg" data-lg-size="1406-1390" class="min">
+                            <img src="../images/nolte/nolte5.jpg" alt="">
+                        </a>
+                        <a href="../images/nolte/nolte5-2.jpg" data-lg-size="1406-1390" class="min">
+                            <img src="../images/nolte/nolte5-2.jpg" alt="">
+                        </a>
+                        <a href="../images/nolte/nolte5-3.jpg" data-lg-size="1406-1390" class="min">
+                            <img src="../images/nolte/nolte5-3.jpg" alt="">
+                        </a>
+                    </div>  
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const lightGalleryInstance = lightGallery(document.getElementById('Nolte5'), {
+                                speed: 500,
+                                thumbnail: true,
+                            });
+                        });
+                    </script>
+                    <div class="brand_btn">
+                        <a href="" class="brand_link form_open">Запросить каталоги</a>  
+                    </div>  
+                </div>
+
+                <div class="brand_item">
+                    <h2 class="brand_item_title">Заголовок кухни 6</h2>
+                    <div id="Nolte6" class="grid-gallery">
+                        <a href="../images/nolte/nolte6.jpg" data-lg-size="1406-1390" class="min">
+                            <img src="../images/nolte/nolte6.jpg" alt="">
+                        </a>
+                        <a href="../images/nolte/nolte6-2.jpg" data-lg-size="1406-1390" class="min">
+                            <img src="../images/nolte/nolte6-2.jpg" alt="">
+                        </a>
+                    </div>  
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const lightGalleryInstance = lightGallery(document.getElementById('Nolte6'), {
+                                speed: 500,
+                                thumbnail: true,
+                            });
+                        });
+                    </script>
+                    <div class="brand_btn">
+                        <a href="" class="brand_link form_open">Запросить каталоги</a>  
+                    </div>  
+                </div>
             </div>
         </div>
     </div>
@@ -197,7 +330,10 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/youtube-background.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/youtube-background.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.3.0/lightgallery.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.3.0/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.3.0/plugins/zoom/lg-zoom.umd.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
