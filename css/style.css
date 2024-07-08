@@ -226,7 +226,6 @@ body {
 .chair-swiper .swiper-slide,
 .sofa-swiper .swiper-slide {
     flex-direction: column;
-    align-items: start;
 }
 .chair-swiper .swiper-slide .chair_title,
 .chair-swiper .swiper-slide .chair_brand,
@@ -739,4 +738,19 @@ body {
 }
 .tel__icon {
     display: none;
+}
+
+
+.sofas_items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.sofas_items .brand_item_title {
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+.sofas_items .grid-gallery {
+    grid-template-columns: repeat(1, 1fr);
 }

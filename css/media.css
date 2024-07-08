@@ -43,6 +43,9 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    .sofas_items {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 @media (max-width: 940px) {
     .footer_social {
@@ -142,6 +145,12 @@
         font-size: 16px;
         width: 100%;
     }
+    .sofas_items .grid-gallery img {
+        object-fit: contain;
+    }
+    .dressing_items .grid-gallery img{
+        object-fit: cover;
+    }
 }
 
 @media (max-width: 630px) {
@@ -166,6 +175,9 @@
     }
     .contacts_info-item {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .sofas_items .grid-gallery {
+        grid-auto-rows: 300px;
     }
 }
 @media (max-width: 590px) {
@@ -217,6 +229,9 @@
     .kitchens-main_link {
         padding: 16px;
     }
+    .sofas_items .grid-gallery {
+        grid-auto-rows: 250px;
+    }
 }
 @media (max-width: 450px) {
     .footer .container{
@@ -249,5 +264,20 @@
     }
     .contacts .main_btn {
         font-size: 15px;
+    }
+    .sofas_items .brand_item_title {
+        margin-top: 0;
+        font-size: 30px;
+    }
+    .brand_link {
+        padding: 16px;
+    }
+    .brand {
+        margin-top: 8px;
+    } 
+}
+@media (max-width: 375px)  {
+    .sofas_items .grid-gallery {
+        grid-auto-rows: 200px;
     }
 }
