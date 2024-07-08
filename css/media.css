@@ -30,7 +30,7 @@
     }
     .info__img,
     .info__text {
-        width: 40%;
+        width: 90%;
     }
     .contacts_wrapper {
         grid-template-columns: repeat(1, 1fr);
@@ -142,9 +142,6 @@
         font-size: 16px;
         width: 100%;
     }
-    .header.header_main {
-        height: 70vh;
-    }
 }
 
 @media (max-width: 630px) {
@@ -249,5 +246,8 @@
     }
     .contacts_info-title {
         font-size: 16px;
+    }
+    .contacts .main_btn {
+        font-size: 15px;
     }
 }
