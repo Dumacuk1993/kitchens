@@ -275,6 +275,9 @@
     .brand {
         margin-top: 8px;
     } 
+    .chair .swiper-slide img  {
+        height: 250px;
+    }
 }
 @media (max-width: 375px)  {
     .sofas_items .grid-gallery {
