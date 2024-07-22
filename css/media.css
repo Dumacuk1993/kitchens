@@ -79,9 +79,12 @@
     .kitchens-main_item {
         height: 200px;
     }
-    /* .kitchens-main_items {
-        
-    } */
+    .chairs_block-text p {
+        font-size: 16px;
+    }
+    .chairs_block-text h3 {
+        font-size: 28px;
+    }
 }
 @media (max-width: 768px) {
     .header .container {
@@ -151,6 +154,9 @@
     .dressing_items .grid-gallery img{
         object-fit: cover;
     }
+    .chairs_block-img {
+        height: 500px;
+    }
 }
 
 @media (max-width: 630px) {
@@ -178,6 +184,18 @@
     }
     .sofas_items .grid-gallery {
         grid-auto-rows: 300px;
+    }
+    .chairs_block {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .chairs_block-img {
+        height: 450px;
+    }
+    .chairs_block--reverse .chairs_block-img {
+        order: 1;
+    }
+    .chairs_full-width--image {
+        height: 350px;
     }
 }
 @media (max-width: 590px) {
@@ -282,5 +300,8 @@
 @media (max-width: 375px)  {
     .sofas_items .grid-gallery {
         grid-auto-rows: 200px;
+    }
+    .chairs_block-img {
+        height: 350px;
     }
 }
