@@ -782,7 +782,7 @@ body {
 .chairs_block-img {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
     height: 600px;
 }
 .chairs_block--reverse .chairs_block-img {
@@ -809,6 +809,6 @@ body {
     height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
     margin-bottom: 32px;
 } 
