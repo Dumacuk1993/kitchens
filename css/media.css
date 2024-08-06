@@ -250,6 +250,9 @@
     .sofas_items .grid-gallery {
         grid-auto-rows: 250px;
     }
+    .header {
+        height: 69px;
+    }
 }
 @media (max-width: 450px) {
     .footer .container{
