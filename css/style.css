@@ -812,3 +812,19 @@ body {
     background-position: center bottom;
     margin-bottom: 32px;
 } 
+
+.show-room_items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+}
+.show-room_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.show-room_items .grid-gallery {
+    grid-auto-rows: auto;
+}
+
