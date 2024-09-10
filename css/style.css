@@ -828,3 +828,18 @@ body {
     grid-auto-rows: auto;
 }
 
+
+
+.chairs_full-width-wrapper {
+    display: flex;
+    gap: 16px;
+}
+
+.v_nalichie_title {
+    margin-bottom: 16px;
+}
+.v_nalichie_description {
+    text-align: start;
+    margin: 0;
+    margin-bottom: 24px;
+}

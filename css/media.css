@@ -200,6 +200,9 @@
     .show-room_items .grid-gallery {
         grid-auto-rows: auto;
     }
+    .chairs_full-width-wrapper {
+        flex-direction: column;
+    }
 }
 @media (max-width: 590px) {
     .header_contacts {
