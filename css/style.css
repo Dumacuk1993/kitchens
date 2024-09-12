@@ -576,7 +576,9 @@ body {
     gap: 32px;
     margin: auto;
 }
-
+.grid-gallery.gallery_v-nalichie {
+    grid-auto-rows: auto;
+}
 .grid-gallery a {
     display: block;
 }
@@ -587,7 +589,9 @@ body {
     object-fit: cover;
     transition: transform 0.2s;
 }
-
+.sofas_gallery-contain .grid-gallery img {
+    object-fit: contain;
+}
 .grid-gallery img:hover {
     transform: scale(1.01);
 }

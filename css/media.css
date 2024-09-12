@@ -157,6 +157,10 @@
     .chairs_block-img {
         height: 500px;
     }
+    .header.header_main,
+    .header__video {
+        height: 65vh;
+    }
 }
 
 @media (max-width: 630px) {
@@ -311,6 +315,10 @@
     }
     .show-room_wrapper {
         gap: 12px;
+    }
+    .header.header_main,
+    .header__video {
+        height: 40vh;
     }
 }
 @media (max-width: 375px)  {
