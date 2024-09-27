@@ -581,6 +581,7 @@ body {
 }
 .grid-gallery a {
     display: block;
+    background-color: #fff;
 }
 
 .grid-gallery img {
@@ -591,6 +592,7 @@ body {
 }
 .sofas_gallery-contain .grid-gallery img {
     object-fit: contain;
+    object-position: 0 0;
 }
 .grid-gallery img:hover {
     transform: scale(1.01);
